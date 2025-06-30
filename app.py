@@ -13,7 +13,7 @@ app = Flask(__name__, template_folder='pages')
 model = joblib.load('model_k.pkl')
 
 # Route to show the form
-@app.route('https://rising-water-dgji.vercel.app/')
+@app.route('/home')
 def home():
     return redirect(url_for('home.html'))
 
